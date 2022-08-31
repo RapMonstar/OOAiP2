@@ -18,8 +18,8 @@ class Food():
         pass
 
     def startCook(self):
-        self.salt()
         self.addWater()
+        self.salt()
         self.vegetables()
         self.sausage()
         self.pasta()
@@ -39,8 +39,10 @@ class Noodle(Food):
 
 
 if __name__ == '__main__':
+    print('Шаги приготовления Окрошки:')
     okroshka = Okroshka()
     okroshka.startCook()
     print()
+    print('Шаги приготовления Лапши:')
     noodle = Noodle()
     noodle.startCook()
